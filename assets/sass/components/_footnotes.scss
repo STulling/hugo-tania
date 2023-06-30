@@ -1,5 +1,5 @@
 .side {
-    width: 200px;
+    width: 300px;
     margin: 0 auto;
 
     p {
@@ -10,12 +10,31 @@
 .side-right {
     float: right;
     clear: right;
-    margin-right: calc(-200px - 2em);
+    margin-right: calc(-300px - 2em);
     background-color: var(--background);
 
     p {
         font-size: .9rem;
     }
+}
+
+.side-left {
+  float: left;
+  clear: left;
+  margin-left: calc(-300px - 2em);
+  background-color: var(--background);
+
+  p {
+      font-size: .9rem;
+  }
+}
+
+.sticky {
+    position: sticky;
+    top: 1rem;
+    z-index: 1;
+    background-color: var(--background);
+    padding: 1em;
 }
 
 .footnotes {
