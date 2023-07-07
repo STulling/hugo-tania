@@ -33,7 +33,8 @@ section {
 
 
   nav#TableOfContents li.active {
-    color: var(--heading-color);
+    // check dark mode
+    color: var(--toc-color);
   }
   
   nav#TableOfContents ul {

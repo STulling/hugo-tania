@@ -19,13 +19,31 @@
 }
 
 .side-left {
+  width: 350px;
   float: left;
   clear: left;
-  margin-left: calc(-300px - 2em);
+  margin-left: calc(-350px - 2em);
   background-color: var(--background);
 
-  p {
-      font-size: .9rem;
+  a {
+      font-size: .95rem;
+  }
+
+  li li {
+    color: var(--light-font-color);
+    margin-left: 1em;
+  }
+
+  li li:last-child::before {
+      content: "└";
+  }
+
+  li li::before {
+    content: "├";
+    font-size: .95rem;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
   }
 }
 
@@ -87,6 +105,10 @@
         margin: 1em auto;
         background: none;
     }
+
+    .side-left {
+      display: none;
+  }
 }
 
 @media (min-width: 1280px) {
